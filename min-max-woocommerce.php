@@ -11,3 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 require_once "vendor/autoload.php";
+
+use Aihimel\MinMax\MinMaxWooCommerce;
+
+MinMaxWooCommerce::get_instance();
