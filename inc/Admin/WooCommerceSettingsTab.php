@@ -1,6 +1,8 @@
 <?php
 namespace Aihimel\MinMax\Admin;
 
+use Aihimel\MinMax\Template;
+
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -20,17 +22,32 @@ class WooCommerceSettingsTab {
 		add_filter( 'woocommerce_settings_products', [ $this, 'render_min_max_settings_page' ], 21 );
 	}
 
+	/**
+	 * Adds a menu under woocommerce > settings > products
+	 *
+	 * @since MIN_MAX_SINCE
+	 *
+	 * @param array $sections
+	 *
+	 * @return array
+	 */
 	public function add_min_max_menu( array $sections ) {
 		$sections[ self::MIN_MAX_SETTINGS_PAGE_KEY ] = __( 'Min Max', 'min-max-woocommerce' );
 		return $sections;
 	}
 
+	/**
+	 * Renders the settings page
+	 *
+	 * @since MIN_MAX_SINCE
+	 *
+	 * @return void
+	 */
 	public function render_min_max_settings_page() {
 		if ( isset( $_GET[ 'section' ] ) ) {
 			$section = sanitize_text_field( $_GET[ 'section' ] );
 			if ( self::MIN_MAX_SETTINGS_PAGE_KEY === $section ) {
-				// @TODO Render settings page here
-				echo "Min Max Settings Page";
+				Template::load( 'admin/settings' );
 			}
 		}
 	}
