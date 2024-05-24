@@ -1,0 +1,19 @@
+{
+    "name": "aihimel/min-max-woocommerce",
+    "description": "Minimum & maximum restriction for WooCommerce, WordPress plugin",
+    "type": "project",
+    "license": "GPL_V3_or_later",
+    "autoload": {
+        "psr-4": {
+            "Aihimel\\MinMax\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aftabul Islam",
+            "email": "toaihimel@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
