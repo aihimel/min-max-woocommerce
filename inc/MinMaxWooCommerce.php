@@ -1,6 +1,8 @@
 <?php
 namespace Aihimel\MinMax;
 
+use Aihimel\MinMax\Admin\WooCommerceSettingsTab;
+
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -22,7 +24,7 @@ final class MinMaxWooCommerce {
 	 * @return void
 	 */
 	private function __construct() {
-
+		self::$container[ WooCommerceSettingsTab::INSTANCE_KEY ] = new WooCommerceSettingsTab();
 	}
 
 	/**
