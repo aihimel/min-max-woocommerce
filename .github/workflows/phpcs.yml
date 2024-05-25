@@ -1,5 +1,7 @@
 name: PHPCS Inspection
-on: [ commit ]
+on:
+  pull_request:
+    branches: [ "develop" ]
 jobs:
   RunPHPCSOnCommit:
     runs-on: ubuntu-latest
