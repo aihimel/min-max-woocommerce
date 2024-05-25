@@ -1,0 +1,7 @@
+name: PHPCS Inspection
+on: [ commit ]
+jobs:
+  RunPHPCSOnCommit:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The job is automatically triggered by ${{ github.event_name }} event."
