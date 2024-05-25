@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
  */
 final class MinMaxWooCommerce {
 	private static $instance = null;
-	private static $container = [];
+	private static array $container = [];
 
 	/**
 	 * Initializes the objects and puts it inside container for future use
@@ -38,7 +38,7 @@ final class MinMaxWooCommerce {
 	 */
 	public static function get_instance( string $key = '' ) {
 		if ( empty( $key ) ) {
-			if ( self::$instance === null ) {
+			if ( null === self::$instance ) {
 				self::$instance = new self();
 			}
 			return self::$instance;
