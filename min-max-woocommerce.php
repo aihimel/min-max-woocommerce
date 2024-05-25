@@ -17,7 +17,7 @@ defined( 'MIN_MAX_ROOT_DIR' )
 defined( 'MIN_MAX_TEMPLATE_ROOT' )
 	|| define( 'MIN_MAX_TEMPLATE_ROOT', MIN_MAX_ROOT_DIR . '/templates/' );
 
-require_once "vendor/autoload.php";
+require_once 'vendor/autoload.php';
 
 use Aihimel\MinMax\MinMaxWooCommerce;
 

@@ -1,8 +1,6 @@
 <?php
 namespace Aihimel\MinMax\Admin;
 
-use Aihimel\MinMax\Template;
-
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -49,7 +47,7 @@ class WooCommerceSettingsTab {
 			'name' => __('Cart Amount Settings', 'min-max-woocommerce'),
 			'type' => 'title',
 			'desc' => __('Set minimum and maximum cart amount for your customers', 'min-max-woocommerce'),
-			'id'   => self::TITLE_ID
+			'id'   => self::TITLE_ID,
 		];
 
 		$settings[] = [
@@ -60,7 +58,7 @@ class WooCommerceSettingsTab {
 			'css'      => 'min-width:300px;',
 			'desc'     => __('Cart minimum amount', 'min-max-woocommerce'),
 			'default'  => '',
-			'placeholder' => 'eg: 30.00'
+			'placeholder' => 'eg: 30.00',
 		];
 
 		$settings[] = [
@@ -71,12 +69,12 @@ class WooCommerceSettingsTab {
 			'css'      => 'min-width:300px;',
 			'desc'     => __('Cart maximum amount', 'min-max-woocommerce'),
 			'default'  => '',
-			'placeholder' => 'eg: 300.00'
+			'placeholder' => 'eg: 300.00',
 		];
 
 		$settings[] = array(
 			'type' => 'sectionend',
-			'id'   => 'my_custom_product_settings'
+			'id'   => 'my_custom_product_settings',
 		);
 
 		return $settings;
@@ -91,7 +89,7 @@ class WooCommerceSettingsTab {
 	 *
 	 * @return array
 	 */
-	public function add_min_max_menu( array $sections ) {
+	public function add_min_max_menu( array $sections ): array {
 		$sections[ self::MIN_MAX_SETTINGS_PAGE_KEY ] = __( 'Min Max', 'min-max-woocommerce' );
 		return $sections;
 	}
