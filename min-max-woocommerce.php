@@ -1,11 +1,17 @@
 <?php
 /**
  * Plugin Name: Min Max WooCommerce
- * Plugin Author: Aftabul Islam
- * Text Domain: min-max-woocommerce
  * Version: 1.0.0
- * Description: Minimum & maximum restriction for WooCommerce, WordPress plugin
+ * Author: Aftabul Islam
+ * Author Email: toaihimel@gmail.com
+ * Requires at least: 5.8
+ * Requires PHP: 7.2
  * Requires Plugins: woocommerce
+ * Text Domain: min-max-woocommerce
+ * Description: Minimum & maximum cart amount restriction for WooCommerce
+ * License: GPLv3 or later
+ * WC requires at least: 6.6
+ * WC tested up to: 8.7
  */
 
 defined( 'ABSPATH' ) || exit;
