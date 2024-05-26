@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @package aihimel/min-max
  *
- * @since MIN_MAX_SINCE
+ * @since 1.0.0
  */
 final class MinMaxWooCommerce {
 	private static $instance = null;
@@ -20,7 +20,7 @@ final class MinMaxWooCommerce {
 	/**
 	 * Initializes the objects and puts it inside container for future use
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -32,7 +32,7 @@ final class MinMaxWooCommerce {
 	/**
 	 * Returns main plugin object or container object if available
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @param string $key
 	 *
