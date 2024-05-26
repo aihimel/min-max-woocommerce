@@ -1,4 +1,4 @@
-=== Min Max WooCommerce ===
+=== Min Max For WooCommerce ===
 Contributors: aihimel
 Tags: min-max, woocommerce, amount-restriction
 Requires at least: 5.8
