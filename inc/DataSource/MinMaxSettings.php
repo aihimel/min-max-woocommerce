@@ -73,5 +73,4 @@ class MinMaxSettings {
 	public function is_cart_amount_enabled(): bool {
 		return $this->get_minimum_amount() || $this->get_maximum_amount();
 	}
-
 }
