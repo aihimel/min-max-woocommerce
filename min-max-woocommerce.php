@@ -20,9 +20,6 @@ defined( 'ABSPATH' ) || exit;
 defined( 'MIN_MAX_ROOT_DIR' )
 	|| define( 'MIN_MAX_ROOT_DIR', __DIR__ );
 
-defined( 'MIN_MAX_TEMPLATE_ROOT' )
-	|| define( 'MIN_MAX_TEMPLATE_ROOT', MIN_MAX_ROOT_DIR . '/templates/' );
-
 require_once 'vendor/autoload.php';
 
 use Aihimel\MinMax\MinMaxWooCommerce;
