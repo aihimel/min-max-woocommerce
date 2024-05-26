@@ -2,6 +2,7 @@
 namespace Aihimel\MinMax;
 
 use Aihimel\MinMax\Admin\WooCommerceSettingsTab;
+use Aihimel\MinMax\Restrictions\AmountRestriction;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -25,6 +26,7 @@ final class MinMaxWooCommerce {
 	 */
 	private function __construct() {
 		self::$container[ WooCommerceSettingsTab::INSTANCE_KEY ] = new WooCommerceSettingsTab();
+		self::$container[ AmountRestriction::INSTANCE_KEY ] = new AmountRestriction();
 	}
 
 	/**
