@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @package aihimel/min-max
  *
- * @since MIN_MAX_SINCE
+ * @since 1.0.0
  */
 class MinMaxSettings {
 
@@ -20,7 +20,7 @@ class MinMaxSettings {
 	/**
 	 * Fetches settings WordPress options
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 */
 	public function __construct() {
 		$this->min_amount = get_option( WooCommerceSettingsTab::MINIMUM_AMOUNT_ID, 0.00 );
@@ -32,7 +32,7 @@ class MinMaxSettings {
 	/**
 	 * Validates the options fetched from options
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -44,7 +44,7 @@ class MinMaxSettings {
 	/**
 	 * Returns minimum amount or default value
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return float
 	 */
@@ -55,7 +55,7 @@ class MinMaxSettings {
 	/**
 	 * Returns maximum amount or default value
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return float
 	 */
@@ -66,7 +66,7 @@ class MinMaxSettings {
 	/**
 	 * Check is min max check is enabled
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return bool
 	 */

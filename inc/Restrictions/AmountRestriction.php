@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @package aihimel/min-max
  *
- * @since MIN_MAX_SINCE
+ * @since 1.0.0
  */
 class AmountRestriction {
 
@@ -64,7 +64,7 @@ class AmountRestriction {
 	/**
 	 * Removed checkout from cart page
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */

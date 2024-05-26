@@ -8,7 +8,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @package aihimel/min-max
  *
- * @since MIN_MAX_SINCE
+ * @since 1.0.0
  */
 class WooCommerceSettingsTab {
 
@@ -18,7 +18,7 @@ class WooCommerceSettingsTab {
 	/**
 	 * Settings ids
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 */
 	const TITLE_ID = 'min-max-woocommerce-settings-title';
 	const MINIMUM_AMOUNT_ID = 'min-max-woocommerce-settings-minimum-amount';
@@ -32,7 +32,7 @@ class WooCommerceSettingsTab {
 	/**
 	 * Adds min max settings inside `min-max-settings` tab
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @param $settings
 	 * @param $current_section
@@ -83,7 +83,7 @@ class WooCommerceSettingsTab {
 	/**
 	 * Adds a menu under woocommerce > settings > products
 	 *
-	 * @since MIN_MAX_SINCE
+	 * @since 1.0.0
 	 *
 	 * @param array $sections
 	 *
