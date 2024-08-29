@@ -1,8 +1,13 @@
 name: Deploy to WordPress.org
 on:
-  push:
-    tags:
-      - "*.*"
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        type: boolean
+        description: On dry-run mode
+#  push:
+#    tags:
+#      - "*.*"
 jobs:
   tag:
     name: New Tag
