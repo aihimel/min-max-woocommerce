@@ -10,7 +10,7 @@ on:
       - "*.*"
 jobs:
   tag:
-    name: New Tag
+    name: Source code deployment on WordPress.org
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
