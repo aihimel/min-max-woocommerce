@@ -5,15 +5,19 @@ on:
       dry_run:
         type: boolean
         description: On dry-run mode
-#  push:
-#    tags:
-#      - "*.*"
+  push:
+    tags:
+      - "*.*"
 jobs:
   tag:
     name: New Tag
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout code
+        uses: actions/checkout@master
+      - name: Build Plugin
+        run: |
+          composer install --no-dev
       - name: WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
         with:
