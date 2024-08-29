@@ -1,4 +1,4 @@
-name: Deploy to WordPress.org
+name: wordpress.org deploy
 on:
   workflow_dispatch:
     inputs:
@@ -10,7 +10,7 @@ on:
       - "*.*"
 jobs:
   tag:
-    name: Source code deployment on WordPress.org
+    name: Releasing new version on wordpress.org plugin repository
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
