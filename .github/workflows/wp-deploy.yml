@@ -2,7 +2,7 @@ name: Deploy to WordPress.org
 on:
   workflow_dispatch:
     inputs:
-      dry-run:
+      dry_run:
         type: boolean
         description: On dry-run mode
 #  push:
@@ -16,6 +16,8 @@ jobs:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy
         uses: 10up/action-wordpress-plugin-deploy@stable
+        with:
+          dry-run: ${{ github.event.inputs.dry_run }}
         env:
           SVN_PASSWORD: ${{ secrets.SVN_AIHIMEL_PASSWORD }}
           SVN_USERNAME: ${{ secrets.SVN_AIHIMEL_USERNAME }}
